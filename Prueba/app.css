@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box; }
+body {
+  background: white;
+  font-family: 'Open Sans', sans-serif; }
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif; }
+img {
+  max-width: 100%; }
+a {
+  color: inherit;
+  text-decoration: none; }
+audio {
+  width: 100%; }
+.container {
+  max-width: 1150px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex; }
+.title {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  display: inline-table;
+  font-size: .6rem; }
+  .title h2 {
+    color: #006294;
+    margin-bottom: 6px; }
+  .title__divider {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+    position: relative; }
+    .title__divider::after {
+      content: '';
+      width: 30%;
+      height: 2px;
+      display: block;
+      background-color: #E52E58;
+      position: absolute;
+      left: 35%; }
+  .title--secondary .title__divider:after {
+    background-color: white; }
+.title.white h2 {
+  color: #fff; }
+.in-place-services__item {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; }
+  .in-place-services__item img {
+    width: 80px; }
+  .in-place-services__item h3 {
+    font-family: 'Roboto', sans-serif; }
+  .in-place-services__item p {
+    font-weight: 300;
+    text-align: center; }
+.in-place-services > div {
+  display: flex; }
+  .in-place-services > div > div {
+    flex-grow: 1; }
+  .in-place-services > div > div:nth-child(1) {
+    background: #B0BC50; }
+  .in-place-services > div > div:nth-child(2) {
+    background: #ED4A4D; }
+  .in-place-services > div > div:nth-child(3) {
+    background: #20C4D1; }
+  .in-place-services > div > div:nth-child(4) {
+    background: #e6d93c; }
+.in-place-services-container {
+  position: relative; }
+  .in-place-services-container button {
+    position: absolute;
+    cursor: pointer;
+    top: 73px;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    color: white; }
+    .in-place-services-container button.next {
+      right: 0; }
+.service {
+  text-align: right; }
+  .service img {
+    width: 40px; }
+  .service h3 {
+    color: #6b6b6b; }
+  .service p {
+    font-weight: 300; }
+.service.left {
+  text-align: left; }
+.welcome {
+  background: #513751;
+  color: #fff;
+  padding: .5rem 0;
+  font-weight: 300;
+  font-size: .8rem; }
+  .welcome .container {
+    align-items: center; }
+  .welcome__msg {
+    margin-right: auto; }
+  .welcome__social {
+    display: flex;
+    align-items: center; }
+    .welcome__social i {
+      margin-left: 1rem;
+      font-size: 1.3rem; }
+nav {
+  padding: 1.1rem 0;
+  background: #F7F7F7;
+  width: 100%;
+  z-index: 1111; }
+  nav .logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center; }
+    nav .logo img {
+      width: 40px;
+      max-width: 100%; }
+    nav .logo h1 {
+      text-transform: uppercase;
+      margin-left: .5rem;
+      font-size: 1.4rem;
+      font-family: 'Roboto', sans-serif;
+      color: #006294; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; }
+    nav ul li {
+      margin-left: 1.8rem; }
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  top: 0; }
+.hero {
+  background: linear-gradient(rgba(105, 0, 105, 0.27), rgba(0, 0, 0, 0.5)), url("./assets/background.jpeg") center no-repeat;
+  /* background: linear-gradient(rgba(105, 0, 105, 0.27), rgba(0, 0, 0, 0.5)), url("https://static.pexels.com/photos/78973/nature-dog-78973.jpeg") center no-repeat; */  /* Esta imagen la uso en JSBIN */
+  background-size: cover;
+  height: 500px; }
+  .hero__content {
+    width: 50%;
+    margin-top: 10%; }
+    .hero__content h1 {
+      font-family: 'Roboto', sans-serif;
+      color: #fff; }
+    .hero__content p {
+      color: rgba(255, 255, 255, 0.52);
+      font-weight: 300; }
+.how {
+  background: #513751;
+  color: white;
+  padding-bottom: 50px; }
+  .how .container {
+    flex-direction: column; }
+  .how .in-place-services {
+    position: relative;
+    top: -70px; }
+  .how__content {
+    display: flex; }
+    .how__content p {
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.52); }
+.what {
+  background: #F7F7F7;
+  padding: 50px 0;
+  text-align: center; }
+  .what__title {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #6b6b6b; }
+  .what .container {
+    flex-direction: column; }
+  .what .title {
+    margin: 0 auto; }
+  .what__content {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around; }
+  .what__left, .what__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .what__center {
+    width: 40%;
+    margin: 0 40px; }
+.appointment {
+  background: #513751;
+  color: white;
+  text-align: center;
+  display: flex; }
+  .appointment .title {
+    width: 30%; }
+  .appointment form {
+    padding: 50px 0;
+    width: 50%; }
+    .appointment form input,
+    .appointment form textarea {
+      display: block;
+      width: 70%;
+      background: transparent;
+      border: 1px solid white;
+      padding: 10px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: 300; }
+    .appointment form input[type="date"] {
+      color: rgba(255, 255, 255, 0.4); }
+    .appointment form textarea {
+      resize: none; }
+    .appointment form button {
+      width: 70%;
+      background: #E52E58;
+      color: white;
+      border: none;
+      padding: 10px 0;
+      font-size: 1.2rem; }
+  .appointment .contact {
+    background: #d43056;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 0; }
+    .appointment .contact__info, .appointment .contact__schedule {
+      width: 70%;
+      margin: 0 auto; }
+    .appointment .contact .item {
+      display: flex;
+      text-align: left;
+      margin: 15px 0; }
+      .appointment .contact .item i {
+        margin-right: 50px;
+        display: inline-block; }
+      .appointment .contact .item__name {
+        margin-right: auto;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase; }
+      .appointment .contact .item__first {
+        margin-top: 50px; }
+  .appointment table {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: left; }
+    .appointment table .day {
+      margin-right: auto;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      margin: 10px 0;
+      padding-right: 65px; }
+footer{
+	background-color:#7cbbff;
+	width: 100%;
+	height:30px;
+    margin: 0 auto;
+    text-align:left;
+	padding:0.5px;
+	font-size:.8em;
+}
+footer img{
+	float:left;
+}
+.container ul li {
+	/* transition:background 0.8s,color 0.8s; */
+	transition:all 0.8s ease;
+}
+.container ul li:hover{
+	opacity: 2;
+	-webkit-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	border:3px solid #ddd2ef;
+	border-radius:5px;
+	-webkit-box-shadow: 10px 10px 60px 0px #483d8b;
+	-moz-box-shadow: 10px 10px 60px 0px #483d8b;
+	-ms-box-shadow: 10px 10px 60px 0px #483d8b;
+	-o-box-shadow: 10px 10px 60px 0px #483d8b;
+	box-shadow: 10px 10px 60px 0px #483d8b;
+	color:#ffffff;
+	background:#663366;
+}
+.logo img{
+	transition:all .6s ease;
+}
+.logo img:hover{
+	opacity: 1;
+	border-radius:200px;
+	-webkit-transform:scale(1.8) rotate(360deg);
+	-ms-transform:scale(1.8) rotate(360deg);
+	-moz-transform:scale(1.8) rotate(360deg);
+	-o-transform:scale(1.8) rotate(360deg);
+	box-shadow:10px 10px 60px 0.1px #ddd;
+}
+.logo h1{
+	transition:all .6s ease;
+}
+.logo h1:hover{
+	opacity: 1;
+	-webkit-transform:scale(.9);
+	-ms-transform:scale(.9);
+	-moz-transform:scale(.9);
+	-o-transform:scale(.9);
+	transform:scale(.9);
+	border:.5px solid #ddd2ef;
+	border-radius:2px;
+	-webkit-box-shadow: 10px 10px 40px 0px #483d8b;
+	-moz-box-shadow: 10px 10px 40px 0px #483d8b;
+	-ms-box-shadow: 10px 10px 40px 0px #483d8b;
+	-o-box-shadow: 10px 10px 40px 0px #483d8b;
+	box-shadow: 10px 10px 40px 0px #483d8b;
+	color:#ffffff;
+	background:#663366;
+}

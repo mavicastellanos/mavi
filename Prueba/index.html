@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://file.myfontastic.com/fskcz2Pdvb7GaWgWzeK98o/icons.css">
+	<link rel="stylesheet" href="app.css">
+	<title>My Pet Shop</title>
+  </head>
+  <body>
+	<audio controls>
+		<source src="http://www.orangefreesounds.com/wp-content/uploads/2017/09/Chill-tune-chill-carrier-23-chills.mp3" type="audio/mpeg">
+		<!-- Su navegador no admite la reproducción de audio. -->
+	</audio>
+	<!-- Welcome -->
+	<section class="welcome">
+	  <div class="container">
+		  <div class="welcome__msg">
+			  <span>Bienvenido a My Pet Shop</span>
+		  </div>
+		  <div class="welcome__social">
+			<span>Redes sociales:</span>
+			<a href="https://facebook.com" target="__blank"><i class="icon-facebook"></i></a>
+			<a href="https://twitter.com" target="__blank"><i class="icon-twitter"></i></a>
+			<a href="https://whatsapp.com" target="__blank"><i class="icon-whatsapp"></i></a>
+			<a href="https://youtube.com" target="__blank"><i class="icon-youtube"></i></a>
+		  </div>
+	  </div>
+	</section>
+	<!-- Navigation -->
+	<nav id="nav">
+	  <div class="container">
+		<div class="logo">
+		  <img src="assets/logo.jpg" alt="Foto de una mascota como logo de la empresa">
+		  <!-- <img src="https://c1.staticflickr.com/6/5537/9898014173_c4f20bf2da_b.jpg" alt="Foto de una mascota como logo de la empresa."> -->	 <!-- Esta imagen la uso en JSBIN -->
+		  <h1>My Pet Shop</h1>
+		</div>
+		<ul>
+		  <li><a href="#hero">Inicio</a></li>
+		  <li><a href="#how">Cómo lo hacemos</a></li>
+		  <li><a href="#what">Servicios</a></li>
+		  <li><a href="#appointment" id="appointment-link">Agenda tu cita</a></li>
+		  <li><a href="#map">Ubicación</a></li>
+		</ul>
+	  </div>
+	</nav>
+	<!-- Hero -->
+	<section class="hero">
+	  <div class="container">
+		<div class="hero__content">
+		  <div class="title">
+			<h2 id="hero">Todo por tu mascota</h2>
+			<div class="title__divider"></div>
+		  </div>
+		  <h1 class="hero__title">Confía en nosotros como tu mascota confía en tí</h1>
+		  <p><strong>Aqui encontrarás todo lo que necesites para el cuidado de tu mascota.</strong></p>
+		  <p><strong>Te ofrecemos los mejores productos y servicios.</strong></p>
+		</div>
+	  </div>
+	</section>
+	<!-- How we do it -->
+	<section class="how" id="how">
+	  <div class="container">
+		<!-- In place services -->
+		<div class="in-place-services-container">
+		  <div class="in-place-services siema">
+			  <div class="in-place-services__item carousel-cell">
+				<img src="assets/petshop.png" alt="Collar para mascota">
+				<!-- <img src="https://image.flaticon.com/icons/png/512/543/543150.png" alt="Collar para mascota"> -->  <!-- Esta imagen la uso en JSBIN -->
+				<h3>Pet Shop</h3>
+				<p id="text-0"></p>
+			  </div>
+			  <div class="in-place-services__item carousel-cell">
+				<img src="assets/guarderia.png" alt="Guardería">
+				<!-- <img src="https://image.flaticon.com/icons/svg/58/58803.svg" alt="Guardería"> -->  <!-- Esta imagen la uso en JSBIN -->
+				<h3>Guardería</h3>
+				<p id="text-1"></p>
+			  </div>
+			  <div class="in-place-services__item carousel-cell">
+				<img src="assets/maletin.png" alt="Maletín de medicina">
+				<!-- <img src="https://image.flaticon.com/icons/svg/87/87990.svg" alt="Maletín de medicina"> -->  <!-- Esta imagen la uso en JSBIN -->
+				<h3>Consulta Veterinaria</h3>
+				<p id="text-2"></p>
+			  </div>
+			  <div class="in-place-services__item carousel-cell">
+				<img src="assets/ambulance.png" alt="Ambulance">
+				<!-- <img src="https://image.flaticon.com/icons/svg/26/26746.svg" alt="Ambulance"> -->  <!-- Esta imagen la uso en JSBIN -->
+				<h3>Hospitalización</h3>
+				<p id="text-3"></p>
+			  </div>
+		  </div>
+		  <button class="prev">&lt;</button>
+		  <button class="next">&gt;</button>
+		</div>
+		<div class="how__content">
+		  <div class="how__information">
+			<div class="title white">
+			  <h2>Cómo lo hacemos</h2>
+			  <div class="title__divider"></div>
+			</div>
+			<div class="how__information__content">
+			  <h2>Bienvenido a la veterinaria y cuidado animal del siglo XXI</h2>
+			  <p>Somos una tienda veterinaria, que brinda los mejores servicios médicos para el cuidado de la salud de tu mascota.</p>
+			  <p>Ponemos a tu disposición una amplia línea de accesorios y alimentos de la mejor calidad para tu mascota.</p>
+			  <p>También cuentas con nuestro servicio de guardería, spa y peluquería para tu mascota las 24 horas del día.</p>
+			</div>
+		  </div>
+		  <div class="how__video">
+			<iframe width="600" height="360" src="https://www.youtube.com/embed/v7-CO86I1SI" frameborder="0" allowfullscreen></iframe>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<!-- What we do -->
+	<section class="what" id="what">
+	  <div class="container">
+		<div class="title">
+		  <h2>Nuestros servicios</h2>
+		  <div class="title__divider"></div>
+		</div>
+		<h2 class="what__title">Servicios</h2>
+		<div class="what__content">
+		  <div class="what__left">
+			<div class="service">
+			  <img src="assets/cirugia.png" alt="Veterinario">
+			  <!-- <img src="https://image.flaticon.com/icons/svg/53/53075.svg" alt="Veterinario"> -->  <!-- Esta imagen la uso en JSBIN -->
+			  <h3>Cirugía</h3>
+			  <p>Ofrecemos servicios de cirugía y hospitalización, acreditados por la sociedad colombiana de veterinaria.</p>
+			</div>
+			<div class="service">
+			  <img src="assets/nutricion.png" alt="Comida para mascotas">
+			  <!-- <img src="https://image.flaticon.com/icons/png/512/543/543148.png" alt="Comida para mascotas"> -->  <!-- Esta imagen la uso en JSBIN -->
+			  <h3>Asesoría Nutricional</h3>
+			  <p>Ofrecemos servicios de nutricionista para tu mascota.</p>
+			</div>
+		  </div>
+		  <div class="what__center">
+			<img src="assets/centraldog.png" alt="Dog">
+			<!-- <img src="http://www.4leggedkids.com/wp-content/uploads/2013/09/Invisible-Fencing-Dogs.jpg" alt="Dog"> -->  <!-- Esta imagen la uso en JSBIN -->
+		  </div>
+		  <div class="what__right">
+			<div class="service left">
+			  <img src="assets/vacunacion.png" alt="Vacunación">
+			  <!-- <img src="https://icon-icons.com/icons2/568/PNG/512/vaccine_2_icon-icons.com_54420.png" alt="Vacunación"> -->  <!-- Esta imagen la uso en JSBIN -->
+			  <h3>Prevención y control de parásitos</h3>
+			  <p>Ofrecemos servicios de vacunación, de acuerdo al esquema requerido para cada mascota.</p>
+			</div>
+			<div class="service left">
+			  <img src="assets/pets-hair-kit.png" alt="Spa">
+			  <!-- <img src="https://image.flaticon.com/icons/svg/40/40831.svg" alt="Spa"> -->  <!-- Esta imagen la uso en JSBIN -->
+			  <h3>Peluquería Premium</h3>
+			  <p>Ofrecemos servicio de spa, peluquería y corte de uñas para el cuidado de tu mascota.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<!-- Appointment -->
+	<section class="appointment" id="appointment">
+		<form>
+		  <div class="title white">
+			<h2>Déjanos ayudarte</h2>
+			<div class="title__divider"></div>
+		  </div>
+		  <h2 class="appointment__title">Agénda tu cita</h2>
+		  <input type="text" placeholder="Nombre" id="name">
+		  <input type="text" placeholder="Apellido">
+		  <input type="text" placeholder="Teléfono">
+		  <input type="email" placeholder="Email">
+		  <input type="date">
+		  <textarea placeholder="Qué le pasa a tu mascota?" rows="10"></textarea>
+		  <button>Enviar</button>
+		</form>
+		<div class="contact">
+		  <div class="contact__schedule">
+			<div class="title white title--secondary">
+			  <h2>Horarios</h2>
+			  <div class="title__divider"></div>
+			</div>
+			<table>
+			  <tbody>
+				<tr>
+				  <td class="day">Lunes-Viernes</td>
+				  <td>7:00AM-9:00PM</td>
+				</tr>
+				<tr>
+				  <td class="day">Sábados</td>
+				  <td>8:00AM-8:00PM</td>
+				</tr>
+				<tr>
+				  <td class="day">Domingos</td>
+				  <td>9:00AM-6:00PM</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		  <div class="contact__info">
+			<div class="title white title--secondary">
+			  <h2>Contacto</h2>
+			  <div class="title__divider"></div>
+			</div>
+			<div class="item item__first">
+			  <i class="ion-android-call"></i>
+			  <span class="item__name">Teléfono</span>
+			  <span class="item__content">098-765-43-21</span>
+			</div>
+			<div class="item">
+			  <i class="ion-android-mail"></i>
+			  <span class="item__name">Email</span>
+			  <span class="item__content">mypetshopcastellanos@info.co</span>
+			</div>
+			<div class="item">
+			  <i class="ion-android-pin"></i>
+			  <span class="item__name">Dirección</span>
+			  <span class="item__content">Carrera 400 # 200-300 Bogotá</span>
+			</div>
+		  </div>
+		</div>
+	</section>
+	<div id="map" style="width: 100%; height: 500px"></div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUAHodENb0VNAiITOQVXBYQGzqOf1-1u4&callback=initMap" async defer>
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/siema@1.4.6/dist/siema.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+	<script src="app.js"></script>
+	<footer>
+		<address>Copyright © 2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maria Castellanos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cel. 098-765-43-21</address>
+		<p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" /></a></p>
+	</footer>
+  </body>
+</html>
